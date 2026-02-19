@@ -3,7 +3,7 @@
 import {useState, useEffect} from 'react'
 import {supabase} from '@/lib/supabase';
 import { redirect } from 'next/navigation';
-import { User } from "@supabase/supabase-js"
+import { User } from "@supabase/supabase-js";
 
 
 export default function AddBookMark(){

@@ -2,10 +2,10 @@
 
 import {supabase} from '@/lib/supabase';
 import {useState, useEffect} from 'react';
-
+import { User } from "@supabase/supabase-js";
 
 export default function BookMarkList(){
-        const [user,setUser] = useState(null);
+        const [user,setUser] = useState<User | null>(null);
         const [bookmarks, setBookmarks] = useState([]);
 
         async function loadBookMarks(){
@@ -54,13 +54,13 @@ export default function BookMarkList(){
     };
     }, [user]);
 
-    async function handleDelete(bookMarkId){
+    async function handleDelete(bookMarkId:number){
         console.log("delte called", bookMarkId)
         await supabase
         .from("bookmarks")
         .delete()
         .eq("id", bookMarkId)
-        .eq("user_id", user.id);
+        .eq("user_id", user?.id);
     }
 
 
