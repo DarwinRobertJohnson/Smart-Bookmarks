@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Challenges faced during the development phase
 
-## Getting Started
+    1. Design of the web application for a seemingly simple application led to overdesigning, but eventually settled
+    on a simpler architecture
 
-First, run the development server:
+    Authentication -> business functions / main functionality -> database interaction
+                                                                
+    2. Boiler plate mayhem, since the functionality of the application was rather simple, slogging through the boiler plate felt too overwhelming, but thanks to AI assisstant ChatGPT, I was able to cut through the boiler plate and wire things correctly
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    3. Styling paralysis, made the mistake of trying to balance development of functionality and styling at the same time, but project requirement guided me back on track by making me understand what was valued was the functionality and performance, So I settled for bare minimum styling
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    4. Tailwing hurricane, for a seemingly simple UI library, it's documentation is organised in a rather  intimidating manner elevating its complexity for someone who primarily worked with bootstrap, but again thanks to ChatGPT I was able to breeze through the docs and get exactly what I wanted.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Note: Many minor bugs and dilemmas did arise during development, like always, but these 4 were the ones that stumped me and made me rethink my approaches and ground them to what is valued by the project requirements                                         
