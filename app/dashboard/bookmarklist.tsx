@@ -4,9 +4,16 @@ import {supabase} from '@/lib/supabase';
 import {useState, useEffect} from 'react';
 import { User } from "@supabase/supabase-js";
 
+type Bookmark = {
+  id: number
+  bookMarkTitle: string
+  bookMarkUrl: string
+  user_id: string
+}
+
 export default function BookMarkList(){
         const [user,setUser] = useState<User | null>(null);
-        const [bookmarks, setBookmarks] = useState([]);
+        const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
 
         async function loadBookMarks(){
                 const { data: bookmarkData } = await supabase
