@@ -18,11 +18,11 @@ export default function AddBookMark(){
     }
     loadUser();
     },[]);
-    function handleTitleInput(e){
+    function handleTitleInput(e: React.ChangeEvent<HTMLInputElement>){
         setBookMarkTitle(e.target.value);
     }
 
-    function handleUrlInput(e){
+    function handleUrlInput(e: React.ChangeEvent<HTMLInputElement>){
         setBookMarkUrl(e.target.value);
     }
 
