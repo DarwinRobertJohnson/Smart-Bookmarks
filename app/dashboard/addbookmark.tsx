@@ -39,8 +39,8 @@ export default function AddBookMark(){
     <div
     className="flex items-center justify-between w-full gap-4 px-4"
     >
-        <input className="bg-white text-black" onChange={handleTitleInput} placeholder='Title'></input>
-        <input className="bg-white text-black" onChange={handleUrlInput} placeholder='Url'></input>
+        <input className="bg-white text-black" onChange={handleTitleInput} placeholder='Title' required></input>
+        <input className="bg-white text-black" onChange={handleUrlInput} placeholder='Url' required></input>
         <button onClick={handleAdd}
         className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition"
         >
